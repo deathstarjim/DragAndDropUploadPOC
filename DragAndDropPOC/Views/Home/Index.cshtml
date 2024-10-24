@@ -4,5 +4,16 @@
 
 <div class="text-center">
     <h1 class="display-4">Drag and Drop Upload POC</h1>
-    
+    <form id="uploadForm" method="post" enctype="multipart/form-data" data-pasley-validate class="form-horizontal form-label-left">
+        <div class="form-group">
+            <label class="control-label col-md-2" for="first-name">
+                Upload File<span class="required">*</span>
+            </label>
+            <div class="col-md-6" id="dropzone">
+                <div action="/home/upload" class="dropzone" id="uploader">
+                    Drop files here or click to upload.<br />
+                </div>
+            </div>
+        </div>    
+    </form>
 </div>
